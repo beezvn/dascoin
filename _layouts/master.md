@@ -60,7 +60,6 @@
   <p><i class="fa fa-copyright" aria-hidden="true"></i> DasCoin Vietn Nam</p>
   <p>Level x , Building Y, Ha Noi, Viet Nam</p>
 </footer>
-  {% include {{ page.pricing }} %}
 
 </body>
 
