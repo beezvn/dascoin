@@ -1,156 +1,30 @@
 ---
 layout: master
 title: DasCoin Viet Nam
-news: news.md
-pricing: price.md
+about: about.md
+team: team.md
+contact: contact.md
+events: events.md
+opportunity: opportunity.md
 ---
 <!-- Page content -->
 <div class="w3-content" style="max-width:1200px">
     <!-- About Section -->
-    <div class="w3-row w3-center" id="home">
-        <div class="w3-col m9">
-            <div class="w3-col m5 border w3-center" style="margin-right:10px;">
-                <div class="w3-col s7">
-                    <img src="{{ site.url }}/assets/images/bitcoin.png" class="w3-round w3-image w3-padding-small" alt="about us" width="250" height="250">
-                </div>
-                <div class="w3-col s5 ">
-                    <h1> _  </h1>
-                    <h4 class="w3-padding-16"> BitCoin  </h4>
-                    <h6> < learn more </h6>
-                </div>
-            </div>
-            <div class="w3-col m5 border w3-center">
-                <div class="w3-col s7">
-                    <img src="{{ site.url }}/assets/images/blockchain.png" class="w3-round w3-image w3-padding-small" alt="about us" width="250" height="250">
-                </div>
-                <div class="w3-col s5 ">
-                    <h1> _  </h1>
-                    <h4 class="w3-padding-16"> BlockChain  </h4>
-                    <h6> < learn more </h6>
-                </div>
-            </div>
+    {% include {{ page.about }} %}
 
-            <div class="w3-col m5 border w3-center" style="margin-right:10px; margin-top:10px;">
-                <div class="w3-col s5 ">
-                    <h1> _  </h1>
-                    <h4 class="w3-padding-16"> DasCoin  </h4>
-                    <h6> learn more > </h6>
-                </div>
-                <div class="w3-col s7">
-                    <img src="{{ site.url }}/assets/images/dascoinlogo.png" class="w3-round w3-image w3-padding-small" alt="about us" width="250" height="250">
-                </div>
-            </div>
-            <div class="w3-col m5 border w3-center" style="margin-top:10px;">
-                <div class="w3-col s5 ">
-                    <h1> _  </h1>
-                    <h4 class="w3-padding-16"> NetLeaders  </h4>
-                    <h6> learn more > </h6>
-                </div>
-                <div class="w3-col s7">
-                    <img src="{{ site.url }}/assets/images/netleaders.png" class="w3-round w3-image w3-padding-small" alt="about us" width="250" height="250">
-                </div>
-            </div>
-        </div>
+    <!-- Upcoming events -->
+    {% include {{ page.events }} %}
 
-        <div id="bitcoin_widget_container" class="w3-col m3"></div>
-        <script src="https://cryptocoinsnews.com/widget/bitcoin_widget.js.php" type="text/javascript"></script>
-    </div>
-
-    <!-- Opportunity -->
-    <hr>    
-    <div class="w3-row w3-padding-32" id="events">
-
-        <h1> Upcoming Events </h1>
-        <h2> Comming Soon .... </h2>
-
-    </div>
-
-    <!-- Opportunity -->
-    <hr>    
-    <div class="w3-row w3-padding-32" id="opportunity">
-
-        <h1> Endless Opportunities </h1>
-        <h2> Comming Soon .... </h2>
-
-    </div>
+    <!-- Opportunity -->   
+    {% include {{ page.opportunity }} %}
 
 
     <!-- Team Section -->
-    <hr>
-    <div class="w3-row w3-padding-32" id="team">
-
-        <h1> Leadership team </h1>
-
-        <div class="w3-col l4 w3-padding-large">
-            <div class="w3-card-4 w3-center">
-                <img src="{{ site.url }}/assets/images/person01.png" alt="Person" class="w3-padding-large" style="width:70%">
-                <p> <b style="font-size:20px;">Tran Anh Nguyen</b> - Director </p>
-                <p>She is an accomplished, innovative and entrepreneurial technologist with over 20 years of senior management experience in information technology, marketing and operations.</p>
-            </div>
-        </div>
-
-        <div class="w3-col l4 w3-padding-large">
-            <div class="w3-card-4 w3-center">
-                <img src="{{ site.url }}/assets/images/person02.png" alt="Person" class="w3-padding-large" style="width:70%">
-                <p> <b style="font-size:20px;">Dzung Chu</b> - Event Manager </p>
-                <p>She is an accomplished, innovative and entrepreneurial technologist with over 20 years of senior management experience in information technology, marketing and operations.</p>
-            </div>
-        </div>
-
-        <div class="w3-col l4 w3-padding-large">
-            <div class="w3-card-4 w3-center">
-                <img src="{{ site.url }}/assets/images/person02.png" alt="Person" class="w3-padding-large" style="width:70%; ">
-                <p><b style="font-size:20px;">Dieu Binh</b> - Account Manager </p>
-                <p>She is an accomplished, innovative and entrepreneurial technologist with over 20 years of senior management experience in information technology, marketing and operations.</p>
-            </div>
-        </div>
-    </div>
-
+    {% include {{ page.team }} %}
 
     <!-- Contact Section -->
 
     <hr>
-    <div class="w3-container w3-padding-32" id="contact">
-        <div class="w3-col l6 w3-padding-large">
-            <h1 class="w3-center">Contact us</h1><br>
-
-            <div style="font-size:20px;" class="w3-border w3-padding-small w3-round w3-card-4">
-            <form action="mailto:info@dascoinvietnam.org" method="post" enctype="text/plain">
-
-              <div class="w3-row">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name.." style="width:100%">
-
-              </div>
-              <div class="w3-row">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name.." style="width:100%">
-
-              </div>
-              <div class="w3-row">
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" style="width:100%"></textarea>
-
-              </div>
-              <div class="w3-row">
-              <input type="submit" value="Submit">
-              </div>
-            </form>
-            </div>
-            <h4 class="w3-center">OR </h4>
-            <ul class="w3-ul w3-card-4" style="font-size:20px">
-                <li>Phone: +84 88888888 </li>
-                <li>Email: info@dascoinvietnam.org</li>
-                <li>Address: Level x , Building Y, Ha Noi, Viet Nam</li>
-            </ul>
-
-        </div>
-
-        <div class="w3-col l6 w3-padding-large">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59587.99212357256!2d105.80194413492772!3d21.022700316299428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9bd9861ca1%3A0xe7887f7b72ca17a9!2zSGFub2ksIEhvw6BuIEtp4bq_bSwgSGFub2ksIFZpZXRuYW0!5e0!3m2!1sen!2sau!4v1488459670637"
-                width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-        </div>
-    </div>
+    {% include {{ page.contact }} %}
     <!-- End page content -->
 </div>
