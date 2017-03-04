@@ -1,7 +1,7 @@
 ---
 layout: master
 title: DasCoin Viet Nam
-about: about.md
+concept: concept.md
 team: team.md
 contact: contact.md
 events: events.md
@@ -9,8 +9,8 @@ opportunity: opportunity.md
 ---
 <!-- Page content -->
 <div class="w3-content" style="max-width:1200px">
-    <!-- About Section -->
-    {% include {{ page.about }} %}
+    <!-- Concepts Section -->
+    {% include {{ page.concept }} %}
 
     <!-- Upcoming events -->
     {% include {{ page.events }} %}

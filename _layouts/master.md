@@ -17,12 +17,10 @@
 <div>
   <div class="w3-top">
   <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
-    <li>
-      <img src="{{ site.url }}/assets/images/dascoinlogo.png" class="w3-round w3-image" alt="about us" width="30" height="0" style="margin-left:10px; padding-top:10px;">
-    </li>
+
     <li>
 
-      <h4 style="padding-left:2px;">asCoin Vietnam</h4>
+      <h4 class="logo"><span  style="margin-left:35px;">asCoin Vietnam </span></h4>
     </li>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <li class="w3-right w3-hide-small">
@@ -36,7 +34,7 @@
     </ul>
   </div>
   <div class="w3-padding-small w3-hide-small">
-    <img src="{{ site.url }}/assets/images/global02.png" class="w3-round" alt="main" width="100%" height="400px">
+    <img src="{{ site.url }}/assets/images/global01.png" class="w3-round" alt="main" width="100%" height="400px">
   </div>
 </div>
 

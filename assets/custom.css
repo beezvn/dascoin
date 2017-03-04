@@ -45,3 +45,10 @@ width:1px;
   background-position: center;
   height: 30px;
 }
+
+.logo{
+  background-image: url("../assets/images/dascoinlogo.png");
+  background-repeat: no-repeat;
+  background-size: 30px;
+  height: 30px;
+}
